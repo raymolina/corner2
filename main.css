@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #ececec; */
+}
+.logo {
+  max-width: 9rem;
+  background: none;
+}
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  gap: 3rem;
+}
+.nav-list li a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
+
+.vision {
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.mision {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 60px;
+  font-size: 30px;
+}
+.vs {
+  background-color: #1c1c1c;
+  border-radius: 30px;
+  color: #ececec;
+
+
+}
+.s {
+  font-family: "Caveat", cursive;
+  color: #1c1c1c;
+}
+.nombre {
+  display: none;
+}
+.no-mbre {
+  display: none;
+}
+.log-o {
+  display: none;
+}
+
+/* media only screen */
+
+@media only screen and (max-width: 900px) {
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 2.55rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .abrir-menu {
+    color: #1c1c1c;
+  }
+  .cerrar-menu {
+    color: #ececec;
+  }
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+  }
+
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+
+  .nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+  }
+
+  .nav-list li a {
+    color: #ecececec;
+  }
+  .logo {
+    display: none;
+  }
+  .vision {
+    display: none;
+  }
+  .mision {
+    display: none;
+  }
+  .nombre {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 100px;
+    
+
+  }
+  .n1 {
+    background-color: #1c1c1c;
+    color: #ececec;
+    border-radius: 30px;
+  }
+  .no-mbre {
+    display: flex;
+    justify-content: center;
+  }
+  /* .log-o {
+    display: flex;
+    position: relative;
+    top: 10px;
+    left: 55px;
+    max-width: 10rem;
+   } */
+   
+}
