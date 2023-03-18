@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.nav-list-sala {
+  display: flex;
+  list-style-type: none;
+  gap: 3rem;
+  position: relative;
+  bottom: 150px;
+}
+.nav-list-sala li a {
+  color: rgb(var(--txt, var(--color_15)));
+  text-decoration: none;
+  color: #1c1c1c;
+  transition: var(--trans, color 0.4s ease 0s);
+}
+.hover01 {
+  transition: all 300ms;
+}
+.hover01:hover {
+  transform: scale(1.22);
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 200px;
+  gap: 5px;
+  background-image: url(./img/green-speech.avif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contenedor {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 600px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20px;
+}
+.contenedor-2 {
+  width: 600px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 30px 20px 30px 20px;
+  gap: 20px;
+  text-transform: capitalize;
+  border-radius: 20px;
+}
+.comentarios {
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 0 0 20px;
+  border-radius: 20px;
+  color: #1c1c1c;
+}
+.contenedor-agg-com {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.imagen-usuario {
+  width: 100px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 50px;
+  color: #1da1f2;
+  max-width: 150px;
+}
+/* .bi-bi  {
+  font-size: 40px;
+  color: #1da1f2;
+  max-width: 150px;
+} */
+.imput-com {
+  width: 500px;
+  height: 100px;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  gap: 5px;
+}
+#nuevoComentario {
+  outline: none;
+  border: 0;
+  width: 100%;
+  height: 50px;
+  padding: 0px 10px 0px 10px;
+  font-size: 15px;
+  background-color: transparent;
+  color: #1c1c1c;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  transition-duration: 200ms;
+}
+#nuevoComentario::placeholder {
+  color: #1c1c1c;
+}
+#nuevoComentario:focus {
+  border-bottom: 2px solid #1da1f2;
+}
+.btn-agg {
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 5px 0px 0px;
+  position: relative;
+  left: 100px;
+}
+button {
+  padding: 12px 20px 12px 20px;
+  border-radius: 20px;
+  border-color: #1da1f2;
+  /* border: 0; */
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+}
+.close {
+  font-size: 12px;
+  position: absolute;
+  right: 150px;
+  width: 20px;
+  z-index: 20;
+  transition-duration: 200ms;
+  display: block;
+  cursor: pointer;
+  color: red;
+}
+.redes-sala {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 100px;
+  gap: 30px;
+  font-size: 22px;
+}
+.fb-s {
+  color: #3b5998;
+  transition: all 300ms;
+}
+.fb-s:hover {
+  transform: scale(1.22);
+}
+
+.int-s {
+  color: #f09433;
+  transition: all 300ms;
+}
+.int-s:hover {
+  transform: scale(1.22);
+}
+.tw-s {
+  color: white;
+  transition: all 300ms;
+}
+.tw-s:hover {
+  transform: scale(1.22);
+}

@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.parrafo {
+  color: #1da1f2;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 37px;
+  left: 174px;
+  bottom: 60px;
+}
+
+.horarios {
+  padding: 2rem;
+  display: flex;
+  justify-content: left;
+  color: black;
+  background: none;
+  position: relative;
+  bottom: 100px;
+
+  animation: teclear 10s steps(125), efecto .5s step-end infinite
+  alternate;
+}
+.redes-blog {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 40px;
+  gap: 30px;
+  font-size: 22px;
+}
+.fb-b {
+  color: #3b5998;
+  transition: all 300ms;
+}
+.fb-b:hover {
+  transform: scale(1.22);
+}
+
+.int-b {
+  color: #517fa4;
+  transition: all 300ms;
+}
+.int-b:hover {
+  transform: scale(1.22);
+}
+.tw-b {
+  color: #1da1f2;
+  transition: all 300ms;
+}
+.tw-b:hover {
+  transform: scale(1.22); 
+}
+
+@keyframes teclear {
+  from {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+   }
+   to {
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+   }
+}
+@keyframes efecto {
+  50% {
+    border-color: transparent;
+  }
+}
+.a {
+  background: none;
+  font-size: 30px;
+  font-family: "Caveat", cursive;
+}
+
+.galeria {
+  position: relative;
+  bottom: 150px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.b {
+  position: relative;
+  left: 400px;
+}
+.p0 {
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Caveat", cursive;
+}
+.p1 {
+  position: relative;
+  left: 400px;
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+}
+
+.p2 {
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+  padding: 20px;
+
+}
+.d {
+  position: relative;
+  left: 400px;
+}
+.p3 {
+  position: relative;
+  left: 400px;
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+
+}
+.logo2 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 100px;
+}
+.logo-corner {
+  width: 320px;
+  height: 150px;
+  position: relative;
+  bottom: 200px;
+  left: 20px;
+}
+.nav-list2 {
+  padding: 30px;
+  display: flex;
+  justify-content: right;
+  list-style-type: none;
+  gap: 3rem;
+}
+
+.nav-list2 li a {
+  position: relative;
+  bottom: 375px;
+  text-decoration: none;
+  color: #1c1c1c;
+  font-size: 20px;
+}
+.hover00 {
+ transition: all 300ms;
+ 
+}
+.hover00:hover {
+ transform: scale(1.02);
+ 
+}
