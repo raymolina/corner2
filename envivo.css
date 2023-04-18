@@ -1,0 +1,18 @@
+.nav-list-en-vivo {
+    display: flex;
+    list-style-type: none;
+    gap: 3rem;
+  }
+  .nav-list-en-vivo li a {
+    color: rgb(var(--txt,var(--color_15)));
+    text-decoration: none;
+    color: #1c1c1c;
+    transition: var(--trans,color .4s ease 0s);
+  
+  }
+  .hover-0 {
+    transition: all 300ms;
+  }
+  .hover-0:hover {
+    transform: scale(1.22);
+  }

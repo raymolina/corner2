@@ -179,3 +179,8 @@ button {
 .tw-s:hover {
   transform: scale(1.22);
 }
+
+.boton-1 {
+  position: relative;
+  bottom: 25px;
+}

@@ -1,6 +1,10 @@
+
+
+
+
 function nComentario() {
   let li = document.createElement("li");
-  let valoringresado = document.getElementById("nuevoComentario").Value;
+  let valoringresado = document.getElementById("nuevoComentario").value;
   let text = document.createTextNode(valoringresado);
   li.appendChild(text);
 
@@ -28,3 +32,5 @@ function nComentario() {
 }
 
 }
+
+
