@@ -1,4 +1,7 @@
-.nav-list-en-vivo {
+
+/* menu nav  */
+
+.nav-list-en-vivo { 
     display: flex;
     list-style-type: none;
     gap: 3rem;
@@ -15,4 +18,21 @@
   }
   .hover-0:hover {
     transform: scale(1.22);
+  }
+
+
+  /* log inn  */
+
+  .task-form {
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+
+  @media only screen and (max-width: 900px) {
+
+   
+
   }

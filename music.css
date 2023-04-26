@@ -6,8 +6,24 @@ body {
   height: 100%;
 }
 body {
+  background: #ada996; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  ); 
+  background: linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  ); 
+
   font-family: sans-serif;
-  background-color: gray;
+  /* background-color: white; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,9 +46,8 @@ button {
 }
 .s-m button {
   background-color: transparent;
-  color: whitesmoke;
+  color: #3b5998;
   font-weight: bold;
-
 }
 
 /* players  */
@@ -92,19 +107,72 @@ button {
   margin: 0;
   padding: 0;
   list-style: none;
-
 }
 .songs a {
   color: lightgray;
   text-decoration: none;
 }
 .songs li {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 .songs a.active {
   color: white;
   font-weight: bold;
+}
+.redes-music {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 150px;
+  gap: 30px;
+  font-size: 22px;
+}
+.fb-m {
+  color: #3b5998;
+  transition: all 300ms;
+}
+.fb-m:hover {
+  transform: scale(1.22);
+}
 
+.int-m {
+  color: #517fa4;
+  transition: all 300ms;
+}
+.int-m:hover {
+  transform: scale(1.22);
+}
+.tw-m {
+  color: #1da1f2;
+  transition: all 300ms;
+}
+.tw-m:hover {
+  transform: scale(1.22);
 }
 
 
+
+@media only screen and (max-width: 900px)   {
+  
+  button {
+    padding: 12px 20px 12px 20px;
+    border-radius: 20px;
+    border-color: #1da1f2;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+    position: relative;
+    left: 20px;
+  }
+  .player {
+    min-width: 320px;
+    background-image: linear-gradient(black, gray);
+    border-radius: 12px;
+    padding: 2rem;
+    color: white;
+    box-shadow: 2px 2px 3px #1c1c1c;
+    position: relative;
+    right: 36px;
+  }
+
+}

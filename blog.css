@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
 .parrafo {
   color: #1da1f2;
@@ -16,18 +16,17 @@
 .horarios {
   padding: 2rem;
   display: flex;
-  justify-content: left;
+  justify-content: left; 
   color: black;
   background: none;
   position: relative;
   bottom: 100px;
 
-  animation: teclear 10s steps(125), efecto .5s step-end infinite
-  alternate;
+  animation: teclear 10s steps(125), efecto 0.5s step-end infinite alternate;
 }
 .redes-blog {
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   position: relative;
   top: 40px;
   gap: 30px;
@@ -53,16 +52,16 @@
   transition: all 300ms;
 }
 .tw-b:hover {
-  transform: scale(1.22); 
+  transform: scale(1.22);
 }
 
 @keyframes teclear {
   from {
     clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
-   }
-   to {
-   clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-   }
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
 }
 @keyframes efecto {
   50% {
@@ -83,6 +82,7 @@
   flex-direction: column;
   gap: 30px;
 }
+
 .b {
   position: relative;
   left: 400px;
@@ -103,7 +103,6 @@
   font-family: "Caveat", cursive;
   font-size: 20px;
   padding: 20px;
-
 }
 .d {
   position: relative;
@@ -114,7 +113,56 @@
   left: 400px;
   font-family: "Caveat", cursive;
   font-size: 20px;
-
+}
+.p4 {
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+  padding: 20px;
+}
+.f {
+  position: relative;
+  left: 400px;
+}
+.p5 {
+  position: relative;
+  left: 400px;
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+}
+.p6 {
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+  padding: 20px;
+}
+.h {
+  position: relative;
+  left: 400px;
+}
+.p7 {
+  position: relative;
+  left: 400px;
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+}
+.p8 {
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+  padding: 20px;
+}
+.p9 {
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+  padding: 20px;
+}
+.k {
+  position: relative;
+  left: 400px;
+}
+.p10 {
+  position: relative;
+  left: 400px;
+  font-family: "Caveat", cursive;
+  font-size: 20px;
 }
 .logo2 {
   display: flex;
@@ -138,17 +186,21 @@
 }
 
 .nav-list2 li a {
-  position: relative;
+  position: relative; 
   bottom: 375px;
   text-decoration: none;
   color: #1c1c1c;
   font-size: 20px;
 }
 .hover00 {
- transition: all 300ms;
- 
+  transition: all 300ms;
 }
 .hover00:hover {
- transform: scale(1.02);
- 
+  transform: scale(1.02);
 }
+.slider {
+  display: none;
+}
+
+
+

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 
 <head>
     <meta charset="UTF-8">
@@ -7,53 +7,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-
+    <link rel="stylesheet" href="./nav-sala.css">
     <link rel="stylesheet" href="./sala.css">
 </head>
 
 <body>
-    <ul class="nav-list-sala">
-        <li class="hover01">
+    <!-- menu-nav  -->
+    <button id="abrir-sala" class="abrir-menu-sala">
+        <i class="bi bi-list"></i>
 
-            <button class="boton-1"> <a href="music.html">Music</a> </button>
-        </li>
-        <li class="hover01">
+    </button>
+    <nav class="nav-sala" id="nav-sala">
+        <button class="cerrar-menu-sala" id="cerrar-sala"> <i class="bi bi-x"></i></button>
 
-            <a href="index.html">Inicio</a>
-        </li>
-        <li class="hover01">
+        <!-- menu lista -->
+        <ul class="nav-list-sala"> 
+            <li class="hover01">
 
-            <a href="envivo.html">En Vivo</a>
-        </li>
-        <li class="hover01">
+                <button class="boton-1"> <a href="music.html">Music</a> </button>
+            </li>
+            <li class="hover01">
 
-            <a href="blog.html">Blog</a>
-        </li>
-        <li class="hover01">
-            <a href="https://goo.gl/maps/kxSGKjLdhwgHcVLP7">Ubicanos</a>
-        </li>
-        <li class="hover01">
+                <a href="index.html">Inicio</a>
+            </li>
+            <li class="hover01">
 
-            <a href="https://wa.me/+526361091786">Escribenos</a>
-        </li>
-    </ul>
+                <a href="envivo.html">En Vivo</a>
+            </li>
+            <li class="hover01">
 
-    <main class="contenedor">
-        <section class="contenedor-agg-com">
-            <div class="imagen-usuario">
-                <i class="bi bi-chat-right"></i>
-            </div>
-            <div class="input-com">
-                <input id="nuevoComentario" type="text" placeholder="Nuevo Comentario...">
-                <div class="btn-agg">
-                    <button onclick="nComentario()">Comentar</button>
+                <a href="blog.html">Blog</a>
+            </li>
+            <li class="hover01">
+                <a href="https://goo.gl/maps/kxSGKjLdhwgHcVLP7">Ubicanos</a>
+            </li>
+            <li class="hover01">
+
+                <a href="https://wa.me/+526361091786">Escribenos</a>
+            </li>
+        </ul>
+        <div class="redes-sala2">
+            <a class="fb-s" href="#"><i class="bi bi-facebook"></i></a>
+            <a class="int-s" href="#"><i class="bi bi-instagram"></i></a>
+            <a class="tw-s" href="#"> <i class="bi bi-twitter"></i></a>
+        </div>
+        </nav>
+
+        <script src="./nav-sala.js"></script>
+
+        <!-- comentarios  -->
+        <main class="contenedor">
+            <section class="contenedor-agg-com">
+                <div class="imagen-usuario">
+                    <i class="bi bi-chat-right"></i>
+                </div>
+                <div class="input-com">
+                    <input id="nuevoComentario" type="text" placeholder="Nuevo Comentario...">
+                    <div class="btn-agg">
+                        <button onclick="nComentario()">Comentar</button>
+
+                    </div>
 
                 </div>
-
-            </div>
-        </section>
-    </main>
-    <ul id="comentarios" class="contenedor-2"></ul>
+            </section>
+        </main>
+        <ul id="comentarios" class="contenedor-2"></ul>
 </body>
 <footer>
     <div class="redes-sala">
@@ -63,5 +81,6 @@
     </div>
 </footer>
 <script src="sala.js"></script>
+
 
 </html>

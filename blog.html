@@ -7,14 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./blog.css">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    
+    <link rel="stylesheet" href="./blog-menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
 </head>
 
 <body>
-<div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #1da1f2;"></path></svg></div>
-<p class="parrafo">Blog</p>
+    <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+            style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+                style="stroke: none; fill: #1da1f2;"></path>
+        </svg></div>
+    <p class="parrafo">Blog</p>
 
     <div class="horarios">
         <p class="a">
@@ -26,49 +32,126 @@
             Servicio General: 7:pm
         </p>
     </div>
-   
-    <ul class="nav-list2">
-        <li class="hover00">
-            <a href="index.html"> Inicio</a>
-        </li>
 
-        <li class="hover00">
-            <a href="sala.html"> Sala</a>
-        </li>
 
-        <li class="hover00">
 
-            <a href="envivo.html"> En Vivo</a>
-        </li>
+    <!-- menu-nav  -->
+    <button id="abrir-blog" class="abrir-menu-blog">
+        <i class="bi bi-list"></i>
 
-        <li class="hover00">
-            <a href="https://goo.gl/maps/kxSGKjLdhwgHcVLP7">Ubicanos</a>
-        </li>
-        <li class="hover00">
+    </button>
+    <nav class="nav-blog" id="nav-blog">
+        <button class="cerrar-menu-blog" id="cerrar-blog"> <i class="bi bi-x"></i></button>
 
-            <a href="https://wa.me/+526361091786">Escribenos</a>
-        </li>
-    </ul>
+        <!-- menu-nav  -->
+        <ul class="nav-list2">
+            <li class="hover00">
+                <a href="index.html"> Inicio</a>
+            </li>
+
+            <li class="hover00">
+                <a href="sala.html"> Sala</a>
+            </li>
+
+            <li class="hover00">
+
+                <a href="envivo.html"> En Vivo</a>
+            </li>
+
+            <li class="hover00">
+                <a href="https://goo.gl/maps/kxSGKjLdhwgHcVLP7">Ubicanos</a>
+            </li>
+            <li class="hover00">
+
+                <a href="https://wa.me/+526361091786">Escribenos</a>
+            </li>
+        </ul>
+        <div class="redes-blog2">
+
+            <a class="fb-b" href="#"><i class="bi bi-facebook"></i></a>
+            <a class="int-b" href="#"><i class="bi bi-instagram"></i></a>
+            <a class="tw-b" href="#"> <i class="bi bi-twitter"></i></a>
+
+        </div>
+        <!-- img slider s  -->
+        <div class="slider">
+            <a href="blog-slider.html">cultura de casa</a>
+        </div>
+    </nav>
+
+    <script src="./blog-menu.js"></script>
+
 
     <div class="galeria">
         <img class="aa" src="./img/apasionados.jpeg" alt="cultura">
-        <p class="p0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veniam fugiat quasi voluptatibus ab facilis
+        <p class="p0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veniam fugiat quasi voluptatibus
+            ab
+            facilis
             deserunt necessitatibus mollitia dolores amet rerum sit dicta provident ut perspiciatis omnis, vel at
             delectus!</p>
         <img class="b" src="./img/diversos.jpeg" alt="cultura">
-        <p class="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veniam fugiat quasi voluptatibus ab
-            facilis deserunt necessitatibus mollitia dolores amet rerum sit dicta provident ut perspiciatis omnis, vel
+        <p class="p1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veniam fugiat quasi voluptatibus
+            ab
+            facilis deserunt necessitatibus mollitia dolores amet rerum sit dicta provident ut perspiciatis omnis,
+            vel
             at delectus!</p>
         <img class="c" src="./img/generosos.jpeg" alt="cultura">
-        <p class="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veniam fugiat quasi voluptatibus ab facilis
+        <p class="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veniam fugiat quasi voluptatibus
+            ab
+            facilis
             deserunt necessitatibus mollitia dolores amet rerum sit dicta provident ut perspiciatis omnis, vel at
             delectus!</p>
         <img class="d" src="./img/originales.jpeg" alt="cultura">
-        <p class="p3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veniam fugiat quasi voluptatibus ab
-            facilis deserunt necessitatibus mollitia dolores amet rerum sit dicta provident ut perspiciatis omnis, vel
+        <p class="p3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veniam fugiat quasi voluptatibus
+            ab
+            facilis deserunt necessitatibus mollitia dolores amet rerum sit dicta provident ut perspiciatis omnis,
+            vel
             at delectus!</p>
-
+        <img class="e" src="./img/punta-de-lanza.jpeg" alt="cultura">
+        <p class="p4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veniam fugiat quasi voluptatibus
+            ab
+            facilis deserunt necessitatibus mollitia dolores amet rerum sit dicta provident ut perspiciatis omnis,
+            vel
+            at delectus!</p>
+        <img class="f" src="./img/sobrenaturales.jpeg" alt="cultura">
+        <p class="p5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veniam fugiat quasi voluptatibus
+            ab
+            facilis deserunt necessitatibus mollitia dolores amet rerum sit dicta provident ut perspiciatis omnis,
+            vel
+            at delectus!</p>
+        <img class="g" src="./img/gente-de-honor.jpeg" alt="cultura">
+        <p class="p6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veniam fugiat quasi voluptatibus
+            ab
+            facilis deserunt necessitatibus mollitia dolores amet rerum sit dicta provident ut perspiciatis omnis,
+            vel
+            at delectus!</p>
+        <img class="h" src="./img/uno.jpeg" alt="cultura">
+        <p class="p7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veniam fugiat quasi voluptatibus
+            ab
+            facilis deserunt necessitatibus mollitia dolores amet rerum sit dicta provident ut perspiciatis omnis,
+            vel
+            at delectus!</p>
+        <img class="i" src="./img/audaces.jpeg" alt="cultura">
+        <p class="p8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veniam fugiat quasi voluptatibus
+            ab
+            facilis deserunt necessitatibus mollitia dolores amet rerum sit dicta provident ut perspiciatis omnis,
+            vel
+            at delectus!</p>
+        <img class="j" src="./img/somos.jpeg" alt="cultura">
+        <p class="p9">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veniam fugiat quasi voluptatibus
+            ab
+            facilis deserunt necessitatibus mollitia dolores amet rerum sit dicta provident ut perspiciatis omnis,
+            vel
+            at delectus!</p>
+        <img class="k" src="./img/clace-mundial.jpeg" alt="cultura">
+        <p class="p10">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non veniam fugiat quasi
+            voluptatibus ab
+            facilis deserunt necessitatibus mollitia dolores amet rerum sit dicta provident ut perspiciatis omnis,
+            vel
+            at delectus!</p>
     </div>
+
+
 
 
 
@@ -76,11 +159,17 @@
 
 <footer>
     <div class="redes-blog">
+
         <a class="fb-b" href="#"><i class="bi bi-facebook"></i></a>
         <a class="int-b" href="#"><i class="bi bi-instagram"></i></a>
         <a class="tw-b" href="#"> <i class="bi bi-twitter"></i></a>
-      </div>
-    <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #1da1f2;"></path></svg></div>
+
+    </div>
+    <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+            style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                style="stroke: none; fill: #1da1f2;"></path>
+        </svg></div>
 </footer>
 
 

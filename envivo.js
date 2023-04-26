@@ -1,33 +1,33 @@
-// import { saveTask, getTasks, onSnapshot, collection, db } from "./firebase.js";
+import { saveTask, getTasks, onSnapshot, collection, db } from "./firebase.js";
 
-// const taskForm = document.getElementById("task-form");
-// const tasksContainer = document.getElementById("tasks-container");
-// window.addEventListener("DOMContentLoaded", async () => {
-//   onSnapshot(collection(db, 'tasks'), (querySnapshot)=> {
-//     let html = "";
+const taskForm = document.getElementById("task-form");
+const tasksContainer = document.getElementById("tasks-container");
+window.addEventListener("DOMContentLoaded", async () => {
+  onSnapshot(collection(db, 'tasks'), (querySnapshot)=> {
+    let html = "";
 
-//   querySnapshot.forEach((doc) => {
-//     const task = doc.data();
-//     html += `
-//    <div>
-//    <h3>${task.title}</h3>
-//    <p>${task.description}</p>
-//    </div>
-//    `;
-//   });
+  querySnapshot.forEach((doc) => {
+    const task = doc.data();
+    html += `
+   <div>
+   <h3>${task.title}</h3>
+   <p>${task.description}</p>
+   </div>
+   `;
+  });
 
-//   });
+  });
   
-//   tasksContainer.innerHTML = "html";
-// });
+  tasksContainer.innerHTML = "html";
+});
 
-// taskForm.addEventListener("submit", (e) => {
-//   e.preventDefault();
+taskForm.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-//   const title = taskForm["task-title"];
-//   const description = taskForm["task-description"];
+  const title = taskForm["task-title"];
+  const description = taskForm["task-description"];
 
-//   saveTask(title.value, description.value);
+  saveTask(title.value, description.value);
 
-//   taskForm.reset();
-// });
+  taskForm.reset();
+});
